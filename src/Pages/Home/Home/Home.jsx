@@ -1,9 +1,10 @@
+import Slider from "../Slider/Slider";
 
 
 const Home = () => {
     return (
         <div>
-            <h2 className="text-5xl font-bold">This is Home Section</h2>
+            <Slider></Slider>
         </div>
     );
 };
