@@ -77,7 +77,7 @@ const Login = () => {
                             <input type="password" name="password" required placeholder="password " className="input input-bordered" />
                         </div>
                         <div className="form-control mt-6">
-                            <input type="submit" className="btn bg-blue-400 " value="login" />
+                            <input type="submit" className="btn  bg-blue-400 " value="login" />
                         </div>
 
                         <div className=" mt-5 flex gap-6">

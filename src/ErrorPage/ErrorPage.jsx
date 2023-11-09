@@ -1,21 +1,19 @@
-import Lottie from "lottie-react";
 import { NavLink } from "react-router-dom";
-import error from "../assets/errorpage/error.gif"
-
+import img from "../../src/assets/errorpage/error.json"
+import Lottie from "lottie-react";
 
 
 const ErrorPage = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center">
-            <div className="rounded-lg p-8 text-center space-y-6">
-                <div>
-                    <Lottie animationData={error} />
+     
+            <div>
+                <div className="lg:w-[400px] md:w-[300px] w-[400px] mx-auto">
+                    <Lottie animationData={img} />
                 </div>
-                <div className="mt-10">
-                    <NavLink className="text-lg font-semibold text-white bg-red-400 px-3 py-2 rounded-lg" to="/home">Go Back Home</NavLink>
+                <div>
+                    <NavLink className="text-lg lg:ml-[680px] md:ml-[320px] ml-[140px]  font-semibold text-white bg-blue-500 px-3 py-2 rounded-lg" to="/home">Go Back Home</NavLink>
                 </div>
             </div>
-        </div>
     );
 };
 

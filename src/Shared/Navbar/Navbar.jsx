@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
+// import logo from "../../assets/logo/dm1.png"
 
 
 const Navbar = () => {
@@ -46,7 +47,7 @@ const Navbar = () => {
             :
             <div>
                 <NavLink to='/login'>
-                    <button className="btn btn-primary text-base font-bold mr-5">Login</button>
+                    <button className="btn btn-primary text-white text-base font-bold mr-5">Login</button>
                 </NavLink>
                 <NavLink to='/signup'>
                     <button className="btn btn-primary btn-outline text-base font-bold">Sign-Up</button>
@@ -54,9 +55,6 @@ const Navbar = () => {
             </div>
 
         }
-
-        {/* <li className="text-lg font-bold"><NavLink to="/login">Login</NavLink></li>
-            <li className="text-lg font-bold"><NavLink to="/signup">Sign-Up</NavLink></li> */}
 
     </>
 
@@ -72,7 +70,7 @@ const Navbar = () => {
                             {navItems}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">cooming soon</a>
+                    <a className="btn btn-ghost normal-case text-xl">coomingggg</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
