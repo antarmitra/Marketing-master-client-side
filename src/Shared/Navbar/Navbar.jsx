@@ -2,7 +2,8 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
-// import logo from "../../assets/logo/dm1.png"
+import logo from "../../assets/logo/dm1.png"
+
 
 
 const Navbar = () => {
@@ -70,7 +71,7 @@ const Navbar = () => {
                             {navItems}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">coomingggg</a>
+                    <a className="btn btn-ghost normal-case text-xl"><img className="lg:w-56 md:w-48 w-40 lg:ml-0 md:ml-[500px] ml-16" src={logo} alt="" /></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
