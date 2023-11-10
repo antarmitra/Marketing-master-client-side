@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaLongArrowAltRight } from 'react-icons/Fa';
+import { Link } from "react-router-dom";
 
 const Category = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -44,7 +45,9 @@ const Category = () => {
                                 <p>Deadline: {item.deadline}</p>
                                 <p>Price: {item.min_price}</p>
                                 <p>Price: {item.max_price}</p>
-                                <button className="btn btn-primary w-full rounded-full text-white text-base">Bid Now <FaLongArrowAltRight className="text-lg font-bold"></FaLongArrowAltRight></button>
+                                <Link to={`/details/${item._id}`}>
+                                    <button className="btn btn-primary w-full rounded-full text-white text-base">Bid Now <FaLongArrowAltRight className="text-lg font-bold"></FaLongArrowAltRight></button>
+                                </Link>
                             </div>
                         </div>
                     </div>

@@ -19,7 +19,7 @@ const AddJob = () => {
         const min_price = form.minPrice.value;
         const max_price = form.maxPrice.value;
         const description = form.description.value;
-        const newAddJob = { image, email, category_name, job_title, deadline, min_price, max_price, description, };
+        const newAddJob = { image, email, category_name, job_title, deadline, min_price, max_price, description };
         console.log(newAddJob);
 
         // sent data to server

@@ -4,37 +4,24 @@
 
 const MyPostedJobCard = ({ post }) => {
 
-    const { category_name, job_title, deadline, min_price, max_price, description } = post;
-
-    // const url = `http://localhost:5000/category/?email=${user?.email}`
-
-    // useEffect(() => {
-    //     fetch(url)
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         console.log(data);
-    //     })
-    // }, [])
-
-
+    const { image, category_name, job_title, deadline, min_price, max_price, description } = post;
 
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-xl text-center">
+            <div className="card  bg-base-100 shadow-xl">
+                <figure><img src={image} alt="Shoes" /></figure>
                 <div className="card-body">
-                    <h2 className="text-2xl font-semibold">{job_title}</h2>
-                    <p>Name: <span>{category_name}</span></p>
+                    <h2 className="card-title">
+                       {job_title}
+                    </h2>
+                    <p className="text-lg font-medium">Category-Name: {category_name}</p>
+                    <p>Max-Price: {max_price}</p>
+                    <p>Min-Price: {min_price}</p>
                     <p>Deadline: {deadline}</p>
-                    <p>Maximum-Price: {max_price}</p>
-                    <p>Minimum-Price: {min_price}</p>
                     <p>Description: {description}</p>
-                    <div className=" flex justify-evenly">
-                        <div>
-                            <button className="btn btn-primary">Update Job</button>
-                        </div>
-                        <div>
-                            <button className="btn btn-primary">Delete Job</button>
-                        </div>
+                    <div className="card-actions justify-end">
+                        <div className="btn btn-primary text-white mr-5">Update</div>
+                        <div className="btn btn-primary text-white">Delete</div>
                     </div>
                 </div>
             </div>

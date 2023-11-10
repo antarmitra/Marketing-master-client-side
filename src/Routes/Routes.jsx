@@ -6,6 +6,9 @@ import Login from "../Login/Login";
 import SignUp from "../SignUp/SignUp";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import MyPostedJob from "../Pages/MyPostedJob/MyPostedJob";
+import Details from "../Pages/Details/Details";
+
+
 
 
 const router = createBrowserRouter([
@@ -17,6 +20,10 @@ const router = createBrowserRouter([
             {
                 path: '/home',
                 element: <Home></Home>
+            },
+            {
+                path: 'details/:id',
+                element: <Details></Details>
             },
             {
                 path: '/addjob',
@@ -34,7 +41,7 @@ const router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <SignUp></SignUp>
-            }
+            },
         ]
     },
 ]);
