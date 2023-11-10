@@ -8,8 +8,8 @@ const MyPostedJobCard = ({ post }) => {
 
     return (
         <div>
-            <div className="card  bg-base-100 shadow-xl">
-                <figure><img src={image} alt="Shoes" /></figure>
+            <div className="card h-[600px] bg-base-100 shadow-xl">
+                <figure><img className="w-[500px] h-[200px]" src={image} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">
                        {job_title}
