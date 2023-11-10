@@ -5,6 +5,7 @@ import AddJob from "../Pages/AddJob/AddJob";
 import Login from "../Login/Login";
 import SignUp from "../SignUp/SignUp";
 import ErrorPage from "../ErrorPage/ErrorPage";
+import MyPostedJob from "../Pages/MyPostedJob/MyPostedJob";
 
 
 const router = createBrowserRouter([
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
             {
                 path: '/addjob',
                 element: <AddJob></AddJob>
+            },
+            {
+                path: '/mypostedjob',
+                element: <MyPostedJob></MyPostedJob>,
+                loader: () =>  fetch('http://localhost:5000/category')
             },
             {
                 path: '/login',

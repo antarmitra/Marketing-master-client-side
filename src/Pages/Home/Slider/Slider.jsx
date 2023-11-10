@@ -1,4 +1,3 @@
-
 import 'swiper/css';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -26,7 +25,7 @@ const Slider = () => {
                     <SwiperSlide >
                         <img className='w-full lg:h-[680px] md:h-[500px] h-[300px]' src={image1} alt="" />
                         <div className="absolute lg:h-[680px] md:h-[500px] h-[300px] flex items-center  left-0 top-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
-                            <div className="text-white  md:space-y-7 space-y-2 lg:pl-[350px] md:pl-[100px] pl-14">
+                            <div className="text-white  md:space-y-7 space-y-2 lg:pl-[370px] md:pl-[100px] pl-14">
                                 <h2 className="lg:text-5xl md:text-4xl text-lg font-bold">We provide the best web services</h2>
                                 <p className="lg:text-xl md:text-base text-[10px] ">You can find out about the web development marketplace at our website</p>
                                 <div className='text-center '>

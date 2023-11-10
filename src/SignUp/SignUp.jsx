@@ -61,7 +61,6 @@ const SignUp = () => {
                 })
             })
             .catch(error => setError(error.message))
-
     }
 
 
@@ -70,10 +69,10 @@ const SignUp = () => {
             <div className="relative max-w-screen-lg mx-auto">
                 <div className="md:flex mb-10">
                     <div className="mr-16">
-                        <Lottie className="lg:w-[500px] h-[700px]" animationData={signup} loop={true} />
+                        <Lottie className="lg:w-[500px] h-[820px]" animationData={signup} loop={true} />
                     </div>
 
-                    <div className="text-center p-2 ">
+                    <div className="text-center p-2 md:w-[1000px]">
                         <form onSubmit={handleSignUp} className="bg-base-100 shadow-lg rounded-lg p-10">
                             <div className="space-y-3 ">
                                 <h2 className="text-4xl font-medium">Sign Up</h2>
@@ -107,7 +106,7 @@ const SignUp = () => {
                                 <input type="submit" className="btn bg-blue-400" value="sign-up" />
                             </div>
 
-                            <div className=" mt-5 flex gap-6">
+                            <div className=" mt-5 flex justify-evenly gap-6">
                                 <div>
                                     <button onClick={handleGoogleSingIn} className="btn ">
                                         <FcGoogle className="lg:text-3xl md:text-lg"></FcGoogle>

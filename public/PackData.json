@@ -1,6 +1,7 @@
 [
     {
         "image": "https://i.ibb.co/Qdc2Gvg/w1.jpg",
+        "email": "antarmitra33@gmail.com",
         "category_name": "Web Development",
         "job_title": "Website Redesign",
         "deadline": "2023-12-15",
@@ -10,6 +11,7 @@
     },
     {
         "image": "https://i.ibb.co/0GnGgGr/w2.jpg",
+        "email": "antarmitra33@gmail.com",
         "category_name": "Web Development",
         "job_title": "E-commerce Store Development",
         "deadline": "2023-11-30",
@@ -19,6 +21,7 @@
     },
     {
         "image": "https://i.ibb.co/dMxsX7p/w3.jpg",
+        "email": "antarmitra40@gmail.com",
         "category_name": "Web Development",
         "job_title": "Custom Web Application",
         "deadline": "2024-01-10",
@@ -28,6 +31,7 @@
     },
     {
         "image": "https://i.ibb.co/SdXfmCn/w4.jpg",
+        "email": "antarmitra33@gmail.com",
         "category_name": "Web Development",
         "job_title": "WordPress Website Setup",
         "deadline": "2023-11-20",
@@ -37,6 +41,7 @@
     },
     {
         "image": "https://i.ibb.co/4KJkb0V/g1.jpg",
+        "email": "antarmitra40@gmail.com",
         "category_name": "Graphic Design",
         "job_title": "Logo Design",
         "deadline": "2023-12-05",
@@ -46,6 +51,7 @@
     },
     {
         "image": "https://i.ibb.co/p4LLq71/g2.jpg",
+        "email": "antarmitra40@gmail.com",
         "category_name": "Graphic Design",
         "job_title": "Brochure Design",
         "deadline": "2023-11-25",
@@ -55,6 +61,7 @@
     },
     {
         "image": "https://i.ibb.co/B3B9D4t/g3.jpg",
+        "email": "antarmitra33@gmail.com",
         "category_name": "Graphic Design",
         "job_title": "Social Media Graphics",
         "deadline": "2023-12-10",
@@ -64,6 +71,7 @@
     },
     {
         "image": "https://i.ibb.co/pQFhjFM/g4.jpg",
+        "email": "antarmitra33@gmail.com",
         "category_name": "Graphic Design",
         "job_title": "Packaging Design",
         "deadline": "2024-01-15",
@@ -73,6 +81,7 @@
     },
     {
         "image": "https://i.ibb.co/KFGYCDg/d1.jpg",
+        "email": "antarmitra33@gmail.com",
         "category_name": "Digital Marketing",
         "job_title": "SEO Optimization",
         "deadline": "2023-11-30",
@@ -82,6 +91,7 @@
     },
     {
         "image": "https://i.ibb.co/X3KLVMN/d2.jpg",
+        "email": "antarmitra33@gmail.com",
         "category_name": "Digital Marketing",
         "job_title": "Social Media Marketing Campaign",
         "deadline": "2023-12-20",
@@ -91,6 +101,7 @@
     },
     {
         "image": "https://i.ibb.co/1ff2XB4/d3.png",
+        "email": "antarmitra33@gmail.com",
         "category_name": "Digital Marketing",
         "job_title": "Google Ads Management",
         "deadline": "2024-01-05",
@@ -100,6 +111,7 @@
     },
     {
         "image": "https://i.ibb.co/61W21TP/d4.jpg",
+        "email": "antarmitra40@gmail.com",
         "category_name": "Digital Marketing",
         "job_title": "Email Marketing Campaign",
         "deadline": "2023-12-15",
