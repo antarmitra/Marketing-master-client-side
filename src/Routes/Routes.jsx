@@ -7,6 +7,8 @@ import SignUp from "../SignUp/SignUp";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import MyPostedJob from "../Pages/MyPostedJob/MyPostedJob";
 import Details from "../Pages/Details/Details";
+import UpdateJob from "../Pages/UpdateJob/UpdateJob";
+import BidNow from "../Pages/BidNow/BidNow";
 
 
 
@@ -22,8 +24,17 @@ const router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path: 'details/:id',
+                path: '/details/:id',
                 element: <Details></Details>
+            },
+            {
+                path: '/bidnow/:id',
+                element: <BidNow></BidNow>
+            },
+            {
+                path: '/updatejob/:id',
+                element: <UpdateJob></UpdateJob>,
+                loader: ({params}) => fetch(`http://localhost:5000/category/${params.id}`)
             },
             {
                 path: '/addjob',

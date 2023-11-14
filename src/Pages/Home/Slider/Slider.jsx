@@ -27,7 +27,7 @@ const Slider = () => {
                         <div className="absolute lg:h-[680px] md:h-[500px] h-[300px] flex items-center  left-0 top-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
                             <div className="text-white  md:space-y-7 space-y-2 lg:pl-[370px] md:pl-[100px] pl-14">
                                 <h2 className="lg:text-5xl md:text-4xl text-lg font-bold">We provide the best web services</h2>
-                                <p className="lg:text-xl md:text-base text-[10px] ">You can find out about the web development marketplace at our website</p>
+                                <p className="lg:text-xl md:text-base text-[10px] text-center ">You can find out about the web development marketplace at our website</p>
                                 <div className='text-center '>
                                     <button className="btn btn-active btn-primary text-lg">Read More <FaArrowRight></FaArrowRight></button>
                                 </div>
@@ -43,7 +43,7 @@ const Slider = () => {
                         <div className="absolute lg:h-[680px] md:h-[500px] h-[300px] flex items-center  left-0 top-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
                             <div className="text-white  md:space-y-7 space-y-2 lg:pl-[220px] md:pl-16">
                                 <h2 className="lg:text-5xl md:text-3xl text-xl font-bold">We provide the best Digital Marketing services</h2>
-                                <p className="lg:text-xl md:text-base text-[10px] ">You can find out about the Digital Marketing marketplace at our website</p>
+                                <p className="lg:text-xl md:text-base text-[10px] text-center ">You can find out about the Digital Marketing marketplace at our website</p>
                                 <div className='text-center '>
                                     <button className="btn btn-active btn-primary text-lg">Read More <FaArrowRight></FaArrowRight></button>
                                 </div>
@@ -60,7 +60,7 @@ const Slider = () => {
                         <div className="absolute lg:h-[680px] md:h-[500px] h-[300px] flex items-center left-0 top-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)]">
                             <div className="text-white  md:space-y-7 space-y-2 lg:pl-[250px] md:pl-16">
                                 <h2 className="lg:text-5xl md:text-3xl text-xl font-bold">We provide the best Graphic Design services</h2>
-                                <p className="lg:text-lg md:text-base text-[10px] ">You can find out about the Graphic Design marketplace at our website</p>
+                                <p className="lg:text-lg md:text-base text-[10px] text-center ">You can find out about the Graphic Design marketplace at our website</p>
                                 <div className='text-center '>
                                     <button className="btn btn-active btn-primary text-lg">Read More <FaArrowRight></FaArrowRight></button>
                                 </div>
