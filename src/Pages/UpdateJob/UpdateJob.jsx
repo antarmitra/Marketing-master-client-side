@@ -100,7 +100,7 @@ const UpdateJob = () => {
                                     <span className="label-text text-lg font-medium text-gray-600">Deadline</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="text" name="deadline" defaultValue={deadline}  placeholder="Deadline....." className="input input-bordered w-full" />
+                                    <input type="date" name="deadline" defaultValue={deadline}  placeholder="Deadline....." className="input input-bordered w-full" />
                                 </label>
                             </div>
                             <div className="form-control md:w-1/2">

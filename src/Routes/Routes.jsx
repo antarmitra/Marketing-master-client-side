@@ -9,6 +9,8 @@ import MyPostedJob from "../Pages/MyPostedJob/MyPostedJob";
 import Details from "../Pages/Details/Details";
 import UpdateJob from "../Pages/UpdateJob/UpdateJob";
 import BidNow from "../Pages/BidNow/BidNow";
+import MyBids from "../Pages/MyBids/MyBids";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -29,12 +31,13 @@ const router = createBrowserRouter([
             },
             {
                 path: '/bidnow/:id',
-                element: <BidNow></BidNow>
+                element: <BidNow></BidNow>,
+                loader: ({ params }) => fetch(`http://localhost:5000/category/${params.id}`)
             },
             {
                 path: '/updatejob/:id',
                 element: <UpdateJob></UpdateJob>,
-                loader: ({params}) => fetch(`http://localhost:5000/category/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/category/${params.id}`)
             },
             {
                 path: '/addjob',
@@ -43,7 +46,11 @@ const router = createBrowserRouter([
             {
                 path: '/mypostedjob',
                 element: <MyPostedJob></MyPostedJob>,
-                loader: () =>  fetch('http://localhost:5000/category')
+                loader: () => fetch('http://localhost:5000/category')
+            },
+            {
+                path: '/mybids',
+                element: <PrivateRoute> <MyBids></MyBids></PrivateRoute>
             },
             {
                 path: '/login',
