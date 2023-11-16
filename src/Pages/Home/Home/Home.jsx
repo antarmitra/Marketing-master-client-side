@@ -1,4 +1,5 @@
 
+import Review from "../../Review/Review";
 import Category from "../Category/Category";
 import Slider from "../Slider/Slider";
 
@@ -9,6 +10,7 @@ const Home = () => {
         <div>
             <Slider></Slider>
             <Category></Category>
+            <Review></Review>
         </div>
     );
 };

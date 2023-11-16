@@ -23,7 +23,7 @@ const Navbar = () => {
             <div className="text-base font-bold"><NavLink to="/addjob">Add Job</NavLink></div>
             <div className="text-base font-bold"><NavLink to="/mypostedjob">My Posted Job</NavLink></div>
             <div className="text-base font-bold"><NavLink to="/mybids">My Bids</NavLink></div>
-            <div className="text-base font-bold"><NavLink to="/bidsrequest">Bids Requests</NavLink></div>
+            <div className="text-base font-bold"><NavLink to="/bidrequest">Bids Requests</NavLink></div>
 
 
             {user ?

@@ -11,7 +11,6 @@ const PrivateRoute = ({ children }) => {
 
 
     if (loading) {
-        // return <progress className="progress w-56"></progress>
         return <Lottie className="mx-auto lg:mt-40 lg:mb-20 md:mt-24 md:mb-20 mt-20 mb-20  md:w-52 w-40" animationData={loader} ></Lottie>
     }
 

@@ -7,7 +7,8 @@ import { ToastContainer, toast } from "react-toastify";
 
 const BidNow = () => {
     const bid = useLoaderData();
-    const {job_title, max_price, min_price, image} = bid;
+    const { job_title, max_price, min_price, image, email: buyerEmails } = bid;
+    console.log(bid);
     const { user } = useContext(AuthContext)
     console.log(user?.email);
 
@@ -21,8 +22,8 @@ const BidNow = () => {
         const minPrice = form.minPrice.value;
         const maxPrice = form.maxPrice.value;
         const buyerEmail = form.buyerEmail.value;
-       
-        const bidNow = { image,  email, title, deadline,  minPrice, maxPrice, buyerEmail };
+        const status = "Pending"
+        const bidNow = { image, email, title, deadline, minPrice, maxPrice, buyerEmail, status };
         console.log(bidNow);
 
         fetch('http://localhost:5000/bid', {
@@ -32,13 +33,13 @@ const BidNow = () => {
             },
             body: JSON.stringify(bidNow)
         })
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-            if (data.insertedId) {
-                toast.success('Added Successfully')
-            }
-        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    toast.success('Added Successfully')
+                }
+            })
     }
 
 
@@ -60,10 +61,10 @@ const BidNow = () => {
                         </div>
                         <div className="form-control md:w-1/2">
                             <label className="label">
-                                <span className="label-text text-lg font-medium text-gray-600">Bider Email</span>
+                                <span className="label-text text-lg font-medium text-gray-600">Email</span>
                             </label>
                             <label className="input-group">
-                                <input type="email" name="email" defaultValue={user?.email} placeholder="Bider Email...." className="input input-bordered w-full" />
+                                <input type="email" name="email" defaultValue={user?.email} readOnly placeholder="Bider Email...." className="input input-bordered w-full" />
                             </label>
                         </div>
                     </div>
@@ -115,7 +116,7 @@ const BidNow = () => {
                                 <span className="label-text text-lg font-medium text-gray-600">Buyer Email</span>
                             </label>
                             <label className="input-group">
-                                <input type="email" name="buyerEmail" placeholder="Buyer Email...." className="input input-bordered w-full" />
+                                <input type="email" name="buyerEmail" defaultValue={buyerEmails} readOnly placeholder="Buyer Email...." className="input input-bordered w-full" />
                             </label>
                         </div>
                     </div>

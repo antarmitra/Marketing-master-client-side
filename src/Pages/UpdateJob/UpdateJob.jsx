@@ -68,7 +68,7 @@ const UpdateJob = () => {
                                     <span className="label-text text-lg font-medium text-gray-600">User Email</span>
                                 </label>
                                 <label className="input-group">
-                                    <input type="email" name="email" defaultValue={user?.email} placeholder="User Email...." className="input input-bordered w-full" />
+                                    <input type="email" name="email" defaultValue={user?.email} readOnly placeholder="User Email...." className="input input-bordered w-full" />
                                 </label>
                             </div>
                         </div>

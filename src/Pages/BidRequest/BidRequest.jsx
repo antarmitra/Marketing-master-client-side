@@ -1,9 +1,10 @@
+
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
-import MyBidRow from "./MyBidRow";
+import BidRequestRow from "./BidRequestRow";
 
 
-const MyBids = () => {
+const BidRequest = () => {
     const { user } = useContext(AuthContext);
     const [bids, setBids] = useState([]);
 
@@ -18,6 +19,25 @@ const MyBids = () => {
             })
     }, [url])
 
+    const status = 'Canceled';
+    const updateStatus = { status }
+
+    const handleRejected = (id) => {
+        fetch(`http://localhost:5000/bid/${id}`, {
+            method: 'PATCH',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(updateStatus)
+        })
+            .then(req => req.json())
+            .then(data => {
+                console.log(data);
+            })
+    }
+
+
+
 
 
     return (
@@ -31,12 +51,13 @@ const MyBids = () => {
                             <th>Job_Title</th>
                             <th>Email</th>
                             <th>Deadline</th>
-                            <th></th>
+                            <th>Maximum Price</th>
+                            <th>Minimum Price</th>
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            bids.map(bid => <MyBidRow key={bid._id} bid={bid}></MyBidRow>)
+                            bids.map(bid => <BidRequestRow key={bid._id} bid={bid} handleRejected={handleRejected}></BidRequestRow>)
                         }
                     </tbody>
                 </table>
@@ -45,4 +66,4 @@ const MyBids = () => {
     );
 };
 
-export default MyBids;
+export default BidRequest;
