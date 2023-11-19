@@ -7,7 +7,6 @@ import logo from "../../assets/logo/dm1.png"
 
 
 const Navbar = () => {
-
     const { signout, user } = useContext(AuthContext);
 
     const handleSignOut = () => {
@@ -59,8 +58,10 @@ const Navbar = () => {
         </div>
     </>
 
+
     return (
         <div>
+
             <div className="navbar bg-base-100 shadow-md">
                 <div className="navbar-start">
                     <div className="dropdown">

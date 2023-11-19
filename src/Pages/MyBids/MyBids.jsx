@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import MyBidRow from "./MyBidRow";
+import { Helmet } from "react-helmet";
 
 
 const MyBids = () => {
@@ -22,15 +23,18 @@ const MyBids = () => {
 
     return (
         <div className="mt-10">
+            <Helmet>
+                <title>MyBids</title>
+            </Helmet>
             <div className="overflow-x-auto">
                 <table className="table">
                     {/* head */}
                     <thead>
                         <tr className="text-lg">
-                            <th>Image</th>
-                            <th>Job_Title</th>
-                            <th>Email</th>
-                            <th>Deadline</th>
+                            <th className="lg:text-lg md:text-base">Image</th>
+                            <th className="lg:text-lg md:text-base">Job_Title</th>
+                            <th className="lg:text-lg md:text-base">Email</th>
+                            <th className="lg:text-lg md:text-base">Deadline</th>
                             <th></th>
                         </tr>
                     </thead>

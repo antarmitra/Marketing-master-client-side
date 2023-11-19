@@ -2,12 +2,13 @@
 import Lottie from "lottie-react";
 import { FcGoogle } from "react-icons/Fc";
 import { FiGithub } from "react-icons/Fi";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import signup from "../assets/signup/signup.json";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import { GoogleAuthProvider, getAuth, signInWithPopup, updateProfile } from "firebase/auth";
 import app from "../Firebase/firebase.config";
+import { Helmet } from "react-helmet";
 
 
 const SignUp = () => {
@@ -21,6 +22,7 @@ const SignUp = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                navigate(location?.state ? location.state : '/')
             })
             .catch(error => console.log(error))
     }
@@ -28,6 +30,9 @@ const SignUp = () => {
 
     // signup with email and password
     const { createUser } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+    console.log('location in the register page', location);
 
     const handleSignUp = e => {
         e.preventDefault();
@@ -55,6 +60,7 @@ const SignUp = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
+                navigate(location?.state ? location.state : '/')
                 updateProfile(result.user, {
                     displayName: name,
                     photoURL: photo
@@ -66,6 +72,9 @@ const SignUp = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>SignUp</title>
+            </Helmet>
             <div className="relative max-w-screen-lg mx-auto">
                 <div className="md:flex mb-10">
                     <div className="mr-16">

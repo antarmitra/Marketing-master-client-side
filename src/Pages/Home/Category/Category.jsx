@@ -61,7 +61,7 @@ const Category = () => {
         <div className=" max-w-screen-xl mx-auto">
 
             <div className="text-center mt-10">
-                <h1 className="text-4xl font-bold">Our Cate<span className="text-blue-500">gory</span></h1>
+                <h1 className="text-4xl font-bold">Our Category</h1>
             </div>
 
             <div className="mt-10 pl-1 gap-2 md:pl-20 lg:pl-48 grid grid-cols-3">

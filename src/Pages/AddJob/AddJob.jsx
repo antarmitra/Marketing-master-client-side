@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from '../../Providers/AuthProvider';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -39,9 +40,13 @@ const AddJob = () => {
             })
 
     }
+    
 
     return (
         <div>
+            <Helmet>
+                <title>Add Job</title>
+            </Helmet>
             <div className="bg-white shadow-lg p-5 mt-5 mb-5 rounded-lg max-w-screen-lg mx-auto">
                 <h2 className="text-4xl font-extrabold text-center text-black">Add Jobs</h2>
                 <form onSubmit={handleAddJob} >

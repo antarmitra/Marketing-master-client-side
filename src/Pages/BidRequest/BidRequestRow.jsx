@@ -29,25 +29,26 @@ const BidRequestRow = ({ bid, handleRejected }) => {
         <tr className="text-base font-medium">
             <td>
                 <div className="avatar">
-                    <div className="rounded w-52 h-32">
+                    <div className="rounded lg:w-52 md:w-24 lg:h-32 md:h-24">
                         <img src={image} alt="Avatar Tailwind CSS Component" />
                     </div>
                 </div>
             </td>
-            <td>
-                {title}
-            </td>
-            <td>{email}</td>
-            <td>{deadline}</td>
-            <td>{maxPrice}</td>
-            <td>{minPrice}</td>
-            <th>
+            <td className="lg:text-lg md:text-sm text-xs">{title}</td>
+            <td className="lg:text-lg md:text-sm text-xs">{email}</td>
+            <td className="lg:text-lg md:text-sm text-xs">{deadline}</td>
+            <td className="lg:text-lg md:text-sm text-xs">{maxPrice}</td>
+            <td className="lg:text-lg md:text-sm text-xs">{minPrice}</td>
 
-                <button onClick={() => handleAccepted(_id)} className="btn btn-primary text-white mr-5">Accept</button>
+            <div className="flex lg:mt-14 md:mt-10 mt-4">
+
+                <button onClick={() => handleAccepted(_id)} className="btn btn-primary text-white lg:mr-5 md:mr-3 mr-1 lg:text-sm md:text-xs text-[10px]">Accept</button>
 
 
-                <button onClick={() => handleRejected(_id)} className="btn btn-primary text-white">Reject</button>
-            </th>
+                <div>
+                    <button onClick={() => handleRejected(_id)} className="btn btn-primary text-white lg:text-sm md:text-xs text-[10px]">Reject</button>
+                </div>
+            </div>
         </tr>
     );
 };
