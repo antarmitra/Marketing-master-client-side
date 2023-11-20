@@ -13,7 +13,7 @@ const MyBidRow = ({ bid }) => {
     const updateStatus = { status }
 
     const handleComplete = (id) => {
-        fetch(`http://localhost:5000/bid/${id}`, {
+        fetch(`https://marketing-master-server.vercel.app/bid/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

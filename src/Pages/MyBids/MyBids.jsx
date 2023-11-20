@@ -9,7 +9,7 @@ const MyBids = () => {
     const [bids, setBids] = useState([]);
 
 
-    const url = `http://localhost:5000/bid?email=${user.email}`;
+    const url = `https://marketing-master-server.vercel.app/bid?email=${user.email}`;
 
     useEffect(() => {
         fetch(url)

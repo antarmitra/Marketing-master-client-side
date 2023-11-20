@@ -7,7 +7,7 @@ const Details = () => {
     console.log(detailsData);
 
     useEffect(() => {
-        fetch('http://localhost:5000/category')
+        fetch('https://marketing-master-server.vercel.app/category')
             .then(res => res.json())
             .then(data => setDetailsData(data))
     }, []);

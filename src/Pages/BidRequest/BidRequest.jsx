@@ -10,7 +10,7 @@ const BidRequest = () => {
     const [bids, setBids] = useState([]);
 
 
-    const url = `http://localhost:5000/bid?email=${user.email}`;
+    const url = `https://marketing-master-server.vercel.app/bid?email=${user.email}`;
 
     useEffect(() => {
         fetch(url)
@@ -24,7 +24,7 @@ const BidRequest = () => {
     const updateStatus = { status }
 
     const handleRejected = (id) => {
-        fetch(`http://localhost:5000/bid/${id}`, {
+        fetch(`https://marketing-master-server.vercel.app/bid/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

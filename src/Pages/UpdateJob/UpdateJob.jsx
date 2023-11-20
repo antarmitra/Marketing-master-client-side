@@ -28,7 +28,7 @@ const UpdateJob = () => {
 
 
         // sent data to server
-        fetch(`http://localhost:5000/category/${_id}`, {
+        fetch(`https://marketing-master-server.vercel.app/category/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

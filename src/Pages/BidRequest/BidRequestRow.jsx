@@ -10,7 +10,7 @@ const BidRequestRow = ({ bid, handleRejected }) => {
     const updateStatus = { status }
 
     const handleAccepted = (id) => {
-        fetch(`http://localhost:5000/bid/${id}`, {
+        fetch(`https://marketing-master-server.vercel.app/bid/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

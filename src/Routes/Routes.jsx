@@ -33,12 +33,12 @@ const router = createBrowserRouter([
             {
                 path: '/bidnow/:id',
                 element: <BidNow></BidNow>,
-                loader: ({ params }) => fetch(`http://localhost:5000/category/${params.id}`)
+                loader: ({ params }) => fetch(`https://marketing-master-server.vercel.app/category/${params.id}`)
             },
             {
                 path: '/updatejob/:id',
                 element: <UpdateJob></UpdateJob>,
-                loader: ({ params }) => fetch(`http://localhost:5000/category/${params.id}`)
+                loader: ({ params }) => fetch(`https://marketing-master-server.vercel.app/category/${params.id}`)
             },
             {
                 path: '/addjob',
@@ -47,7 +47,7 @@ const router = createBrowserRouter([
             {
                 path: '/mypostedjob',
                 element: <PrivateRoute><MyPostedJob></MyPostedJob></PrivateRoute>,
-                loader: () => fetch('http://localhost:5000/category')
+                loader: () => fetch('https://marketing-master-server.vercel.app/category')
             },
             {
                 path: '/mybids',

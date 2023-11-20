@@ -24,7 +24,7 @@ const AddJob = () => {
         console.log(newAddJob);
 
         // sent data to server
-        fetch('http://localhost:5000/category  ', {
+        fetch('https://marketing-master-server.vercel.app/category  ', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

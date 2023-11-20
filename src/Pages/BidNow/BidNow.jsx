@@ -26,7 +26,7 @@ const BidNow = () => {
         const bidNow = { image, email, title, deadline, minPrice, maxPrice, buyerEmail, status };
         console.log(bidNow);
 
-        fetch('http://localhost:5000/bid', {
+        fetch('https://marketing-master-server.vercel.app/bid', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
