@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 
 import { Navigation } from 'swiper/modules';
 
-import image1 from "../../../assets/banner/w.png";
+import image1 from "../../../assets/banner/search.jpeg";
 import image2 from "../../../assets/banner/g.png";
 import image3 from "../../../assets/banner/d.png"
 

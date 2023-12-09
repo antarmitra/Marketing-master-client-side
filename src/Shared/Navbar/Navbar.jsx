@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
-import logo from "../../assets/logo/dm1.png"
+import logo from "../../assets/logo/logo.png"
 
 
 
@@ -18,7 +18,7 @@ const Navbar = () => {
 
     const navItems = <>
         <div className="lg:flex justify-between gap-5 items-center">
-            <div className="text-base font-bold"><NavLink to="/home">Home</NavLink></div>
+            <div className="text-base font-bold"><NavLink to="/">Home</NavLink></div>
             <div className="text-base font-bold"><NavLink to="/addjob">Add Job</NavLink></div>
             <div className="text-base font-bold"><NavLink to="/mypostedjob">My Posted Job</NavLink></div>
             <div className="text-base font-bold"><NavLink to="/mybids">My Bids</NavLink></div>
